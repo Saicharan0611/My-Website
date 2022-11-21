@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Main Page.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionHomePage">
+        <div class="book-store-home-page">
+            <h1 class="home-page-heading">Popular Book</h1>
+            <div class="popular-book-container d-flex flex-row">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-apj-img.png"/>
+                <div class="popular-book-short-deatils-container">
+                    <h1 class="popular-book-heading">Wings of Fire</h1>
+                    <p class="popular-book-text">An Autobiography of Abdul Kalam</p>
+                    <p class="popular-book-author">by Arun Tiwari</p>
+                    <button class="button btn btn-danger" onclick="display('sectionWingsofFireBook')">Read Now</button>
+                </div>
+            </div>
+            
+            <h1 class="recommended-books-heading">Recommended Books</h1>
+            <div class="recommended-book-container d-flex flex row">
+                <img class="recommended-book-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png">            
+                <div class="recommended-book-short-details-container">
+                    <h1 class="recommended-book-name">The 3 Mistakes of my Life</h1>
+                    <p class="recommended-book-description">Indian Author<br/>by Chethan Bhagat</p>
+                    <button class="button btn btn-primary" onclick="display('section3MistakesofMyLifeBook')">Read Now</button>
+                </div>
+            </div>
+
+            <div class="recommended-book-container d-flex flex-row">
+                <img class="recommended-book-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/harrypotter-img.png">            
+                <div class="recommended-book-short-details-container">
+                    <h1 class="recommended-book-name">Harry Potter</h1>
+                    <p class="recommended-book-description">and the Sorcerer's Stone<br/>by J.K.Rowling</p>
+                    <button class="button btn btn-primary" onclick="display('sectionHarryPotterBook')">Read Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionWingsofFireBook">
+        <div class="book-details-page">
+            <img class="book-details-page-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-apj-img.png">
+            <h1 class="book-name">Wings of Fire</h1>
+            <p class="author">by Arun Tiwari</p>
+            <p class="book-description">
+                Every Common man who by his sheer girt<br/>
+                and hard work achieves success should share his <br/>story with the rest for
+                they may find inspiration and strength to go on, in his<br/> story. The "Wings
+                of Fire" is one such autobiography by<br/> 
+                visionary sceintist Dr. APJ Abdul Kalam, who from very<br/>
+                humble beginnings rose to be the President of India. The<br/>
+                book is full insights, personal moments and life<br/>
+                experineces of Dr. kalam. It gives us an understanding on<br/>
+                his journey of Sucess
+            </p>
+            <button class="button btn btn-warning" onclick="display('sectionHomePage')">Back</button>
+            <input class="button btn btn-primary" type="button" onClick="parent.open('https://www.amazon.in/Wings-Fire-Autobiography-Abdul-Kalam/dp/8173711461/ref=sr_1_2?keywords=wings+of+fire&qid=1658187946&sprefix=wings+of+%2Caps%2C254&sr=8-2')" value='Buy Now'>
+        </div>
+    </div>
+
+    <div id="section3MistakesofMyLifeBook">
+        <div class="book-details-page">
+            <img class="book-details-page-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png">
+            <h1 class="book-name">3 Mistakes of My Life</h1>
+            <p class="author">by Chetan Bhagat</p>
+            <p class="book-description">
+                The 3 Mistakes of my life is the Third novel Written by<br/>
+                eminent Indian Author Chetan Bhagat. Based on Cricket,<br/>
+                business and religion, the novel is set against the<br/>
+                backdrop of beautiful city Ahmedabad. Revolving around<br/> 
+                three young Indian boys Om1, Ishann and Govind, the<br/>
+                book goes on to narrate how the three are trying their<br/>
+                best to make ends meet in the city. based on the real Event,<br/>
+                the book starts with adramatic twist, where Bhagat is<br/>
+                reading an e-mail sent by some young person Govind
+            </p>
+            <button class="button btn btn-warning"onclick="display('sectionHomePage')">Back</button>
+            <input class="button btn btn-primary" type="button" onClick="parent.open('https://www.amazon.in/3-Mistakes-My-Life/dp/8129135515/ref=sr_1_6?keywords=chethan+baghath+books&qid=1658187300&sprefix=chetha%2Caps%2C294&sr=8-6')" value='Buy Now'>
+        </div>
+    </div>
+
+    <div id="sectionHarryPotterBook">
+        <div class="book-details-page">
+            <img class="book-details-page-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/harrypotter-img.png">
+            <h1 class="book-name">Harry Potter and the Sorcerer's Stone</h1>
+            <p class="author">by J.K Rowling</p>
+            <p class="book-description">
+                Harry Potter's lifeis miserable.His Parents are dead and<br/>
+                he's stuck with his heartless relatives, who force him to<br/>
+                live in a tiny closet under the stairs.But his fortune<br/>
+                changes when he recives a letter that tells him the truth<br/> 
+                about himself: he's a wizard. A mysterious vistor resuces<br/>
+                him rom his relatives and takes him to his new home<br/>
+                Hogwarts School of Witchercraft and Wizardy. After a<br/>
+                Lifetime of Botling up his magical powers, Harry finally<br/>
+                feels like a normal kid.
+            </p>
+            <button class="button btn btn-warning" onclick="display('sectionHomePage')">Back</button>
+            <input class="button btn btn-primary" type="button" onClick="parent.open('https://www.amazon.in/Harry-Potter-Philosophers-Stone-Rowling-ebook/dp/B019PIOJYU/ref=sr_1_2?keywords=harry+potter+and+sorcerers+stone+book&qid=1658188752&sprefix=harry+potter+and+s%2Caps%2C285&sr=8-2')" value='Buy Now'>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
